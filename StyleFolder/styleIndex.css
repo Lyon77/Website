@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+section {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/*Title*/
+.mainTitle {
+  background-image: url("../Pictures/forest.JPG");
+  filter: brightness(0.7);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.mainTitle .filter {
+  background: #003b43;
+  filter: opacity(0.4);
+  width: 100%;
+  height: 100%;
+}
+
+#titleLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7em;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+#titleLine #name {
+  color: #6fe200;
+}
+
+/*about*/
+.about {
+  text-align: center;
+  color: #5c6566;
+}
+
+/*bio*/
+.bio {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  background-color: #003b43;
+}
+.bio .container {
+  display: inline-block;
+}
+.bio .container .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25em;
+  justify-items: center;
+}
+.bio .container .grid .grid2 {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  grid-template-rows: 20em;
+}
+.bio .container .grid .grid2 .box {
+  margin: auto 0;
+}
+.bio .container .grid .grid2 .ryan {
+  display: inline-block;
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+  background-image: url("../Pictures/icon.jpg");
+  background-position: center;
+}
+.bio .container .grid .grid2 .b {
+  padding-top: 1em;
+  font-style: italic;
+  width: 60%;
+  margin: 0 auto;
+}
+.bio .container .grid .grid2 .c {
+  text-align: left;
+}
+@media only screen and (max-width: 800px) {
+  .bio .container .grid {
+    grid-template-rows: 45em;
+  }
+  .bio .container .grid .grid2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 23em 23em;
+  }
+  .bio .container .grid .grid2 .c {
+    text-align: center;
+  }
+}
+
+/*projects*/
+.projects {
+  text-align: center;
+  color: #5c6566;
+  z-index: 1;
+}
+.projects .pic {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.projects .pic .img-container {
+  width: 28vw;
+  height: 28vw;
+  max-width: 34em;
+  max-height: 34em;
+  min-width: 20em;
+  min-height: 20em;
+  padding: 1.5vw;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  transition: all 0.3s;
+}
+.projects .pic .img-container:hover img {
+  filter: brightness(30%);
+}
+.projects .pic .img-container:hover div {
+  opacity: 1;
+}
+.projects .pic .img-container img {
+  height: 100%;
+  transition: all 1s;
+}
+.projects .pic .img-container div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.projects .pic .img-container div #italics {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-family: "Crimson Text", serif;
+  font-size: 0.9em;
+}
+.projects .pic .img-container div #text {
+  font-weight: bold;
+  font-size: 1.75em;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+.projects .pic .img-container div #projectLink {
+  margin: 0;
+  padding: 0.5em 1em;
+  border-style: solid;
+  border-width: medium;
+  color: #ffffff;
+  border-color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.projects .pic .img-container div #projectLink:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/*family*/
+.family {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  margin-top: 2em;
+  background-color: #003b43;
+}
+
+/*# sourceMappingURL=styleIndex.css.map */
