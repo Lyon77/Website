@@ -20,5 +20,5 @@ $(".climbing").click(function() {
 $(".games").click(function() {
     $(".description #home").text("Video Games");
     $(".description #body .A").text("Ever since I was young, I've held a fondness of games, though not in the usual way you would imagine it to be. I loved watching people play. Seeing the happiness they had brought me so much joy. Because of this, I have been working towards a career in the video gaming industry.");
-    $(".description #body .B").text("Some of my most favorite and treasured games are the Super Smash Bros series and Overwatch. Super Smash Bros for the competitive scene and Overwatch for the story building. Moreover, I love games like Civ VI, Slay the Spire, and Dota Underlords for the strategy aspects of the game.");
+    $(".description #body .B").text("Some of my most favorite and treasured games are the Super Smash Bros series and Overwatch. Super Smash Bros for the competitive scene and Overwatch for the story building. Moreover, I love games like Civ VI, Slay the Spire, and Dota Underlords for the strategy aspects of the game. I also follow a ton of indie games. :)");
 });
